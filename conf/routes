@@ -18,12 +18,25 @@ GET         /catalog-manager/v1/catalog-ds/standard/fields               control
 GET         /catalog-manager/v1/catalog-ds/tags                          controllers.CatalogController.getTags
 POST        /catalog-manager/v1/catalog-ds/linked/:name                  controllers.CatalogController.getLinkedDataset(name: String, limit: Option[Int])
 POST        /catalog-manager/v1/catalog-ds/kafka/notifications/add       controllers.CatalogController.sendToKafka
+GET         /voc/fields/getall                                           controllers.CatalogController.getFieldsVoc
+
+GET         /voc/themes/getall/                                          controllers.VocController.vocThemesGetAll
+GET         /voc/subthemes/getall/                                       controllers.VocController.vocSubthemesGetAll
+GET         /voc/subthemes/getbyid/:themeId                              controllers.VocController.vocSubthemesGetById(themeId: String)
+GET         /voc/themes/dcat2daf/:themeId                                controllers.VocController.vocDcat2DafTheme(themeId: String)
+GET         /voc/subthemes/dcat2daf/:themeId/:subthemeId                 controllers.VocController.vocDcat2DafSubtheme(themeId: String, subthemeId: String)
+GET         /voc/dcatthemes/getall                                       controllers.VocController.vocDcatThemeGetAll
+GET         /voc/dcatsubthemes/getall/                                   controllers.VocController.vocDcatSubthemesGetAll
+GET         /voc/dcatsubthemes/getbyid/:dcatapitThemeId                  controllers.VocController.vocDcatSubthemesGetById(dcatapitThemeId: String)
+GET         /voc/dcatthemes/daf2dcat/:themeId                            controllers.VocController.vocDaf2DcatTheme(themeId: String)
+GET         /voc/dcatsubthemes/daf2dcat/:themeId/:subthemeId             controllers.VocController.vocDaf2DcatSubtheme(themeId: String, subthemeId: String)
 
 POST        /catalog-manager/v1/kylo/feed/:fileType                      controllers.KyloController.createKyloFeed(fileType: String)
 
-GET         /catalog-manager/v1/nifi/start/:orgName/:datasetName         controllers.NifiControllers.startNifiProcessor(datasetName: String, orgName: String)
+GET         /catalog-manager/v1/nifi/start/:orgName/:datasetName         controllers.NifiController.startNifiProcessor(datasetName: String, orgName: String)
 
 POST        /catalog-manager/v1/ckan/add                                 controllers.CkanController.addCatalogCkanGeo
 #DELETE      /ckan/purgeDatasetCkanGeo/:datasetId                         controllers.CkanController.purgeDatasetCkanGeo(datasetId: String)
 DELETE      /catalog-manager/v1/ckan/purge/:datasetId                    controllers.CkanController.purgeDatasetCkanGeo(datasetId: String)
 
+POST        /test                                                        controllers.CkanController.test
