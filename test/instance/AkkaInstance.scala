@@ -11,7 +11,7 @@ trait AkkaInstance {
 
   protected val systemName = s"TestSystem_${System.currentTimeMillis}"
 
-  protected lazy val actorSystem = ActorSystem(systemName, configuration.underlying)
+  protected lazy val actorSystem = ActorSystem(systemName, configurationTest.underlying)
 
   def terminateAkka() = Try {
     Await.result(actorSystem.terminate(), 20.seconds)

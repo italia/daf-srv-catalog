@@ -1,0 +1,1448 @@
+{
+  "dataschema" : {
+    "avro" : {
+      "namespace" : "daf://pac_consip/GOVE/Bandi test consip",
+      "type" : "record",
+      "name" : "Bandi test consip",
+      "aliases" : [
+        "Bandi test consip"
+      ],
+      "fields" : [
+        {
+          "name" : "#Denominazione_Bandoè*@`",
+          "type" : "string"
+        },
+        {
+          "name" : "Denominazione_Lotto",
+          "type" : "string"
+        },
+        {
+          "name" : "Identificativo_Lotto",
+          "type" : "string"
+        },
+        {
+          "name" : "Tipologia_Lotto",
+          "type" : "string"
+        },
+        {
+          "name" : "Categoria_Merceologica",
+          "type" : "string"
+        },
+        {
+          "name" : "Tipo_Strumento",
+          "type" : "string"
+        },
+        {
+          "name" : "Tipo_Procedura",
+          "type" : "string"
+        },
+        {
+          "name" : "Modalita_Svolgimento",
+          "type" : "string"
+        },
+        {
+          "name" : "Aggiudicazione_Esclusiva",
+          "type" : "string"
+        },
+        {
+          "name" : "Verde",
+          "type" : "string"
+        },
+        {
+          "name" : "Criterio_Aggiudicazione",
+          "type" : "string"
+        },
+        {
+          "name" : "Data_Pubblicazione",
+          "type" : "string"
+        },
+        {
+          "name" : "Data_Aggiudicazione",
+          "type" : "string"
+        },
+        {
+          "name" : "Data_Attivazione",
+          "type" : "string"
+        },
+        {
+          "name" : "Data_Autorizzazione_6_5",
+          "type" : "string"
+        },
+        {
+          "name" : "Data_Autorizzazione_7_5",
+          "type" : "string"
+        },
+        {
+          "name" : "Data_Termine",
+          "type" : "string"
+        },
+        {
+          "name" : "Base_Asta",
+          "type" : "int"
+        },
+        {
+          "name" : "Importo_Massimale",
+          "type" : "string"
+        },
+        {
+          "name" : "Quantita_Massimale",
+          "type" : "string"
+        },
+        {
+          "name" : "Unita_Misura",
+          "type" : "string"
+        },
+        {
+          "name" : "Percentuale_Erosione",
+          "type" : "string"
+        },
+        {
+          "name" : "Numero_Operatori_Economici_Partecipanti",
+          "type" : "string"
+        },
+        {
+          "name" : "Numero_Operatori_Economici_Aggiudicatari/Abilitati",
+          "type" : "string"
+        },
+        {
+          "name" : "Flag_Commissione_FEE",
+          "type" : "string"
+        }
+      ],
+      "separator" : null,
+      "property_hierarchy" : "Flag_Commissione_FEE"
+    },
+    "flatSchema" : [
+      {
+        "name" : "#Denominazione_Bando",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "[Indirizzo] indirizzo completo; (Literal)",
+            "context" : "https://w3id.org/italia/onto/CLV/C73E5DD2659E43553BCA2D35EEEB9498",
+            "predicate" : "https://w3id.org/italia/onto/CLV/fullAddress",
+            "subject" : "https://w3id.org/italia/onto/CLV/Address",
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Denominazione_Lotto",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Identificativo_Lotto",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Tipologia_Lotto",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Categoria_Merceologica",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Tipo_Strumento",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Tipo_Procedura",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Modalita_Svolgimento",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Aggiudicazione_Esclusiva",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Verde",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Criterio_Aggiudicazione",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Data_Pubblicazione",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Data_Aggiudicazione",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Data_Attivazione",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Data_Autorizzazione_6_5",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Data_Autorizzazione_7_5",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Data_Termine",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Base_Asta",
+        "type" : "int",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "int"
+        }
+      },
+      {
+        "name" : "Importo_Massimale",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Quantita_Massimale",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Unita_Misura",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Percentuale_Erosione",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Numero_Operatori_Economici_Partecipanti",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Numero_Operatori_Economici_Aggiudicatari/Abilitati",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      },
+      {
+        "name" : "Flag_Commissione_FEE",
+        "type" : "string",
+        "metadata" : {
+          "desc" : "",
+          "field_type" : null,
+          "cat" : null,
+          "tag" : [],
+          "required" : null,
+          "semantics" : {
+            "id" : "",
+            "context" : null,
+            "predicate" : null,
+            "subject" : null,
+            "id_label" : null,
+            "context_label" : null,
+            "uri_voc" : null,
+            "property_hierarchy" : null,
+            "rdf_object" : null,
+            "field_group" : null,
+            "uri_property" : null
+          },
+          "constr" : null,
+          "field_profile" : {
+            "is_index" : null,
+            "is_profile" : null,
+            "standardization" : null,
+            "entity_extr" : null,
+            "validation" : null
+          },
+          "format_std" : {
+            "name" : null,
+            "param" : null,
+            "conv" : []
+          },
+          "uniq_dim" : null,
+          "is_createdate" : null,
+          "is_updatedate" : null,
+          "key" : null,
+          "personal" : {
+            "is_personal" : null,
+            "cat" : null,
+            "processing" : null,
+            "is_analysis" : null
+          },
+          "title" : null,
+          "type" : "string"
+        }
+      }
+    ],
+    "kyloSchema" : "{\"name\":null,\"description\":null,\"charset\":\"UTF-8\",\"properties\":{},\"fields\":[{\"sampleValues\":[\"ACCORDO QUADRO SERVIZI APPLICATIVI - SECONDA EDIZIONE\",\"ACCORDO QUADRO SERVIZI APPLICATIVI - SECONDA EDIZIONE\"],\"name\":\"#Denominazione_Bando\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"CONTRATTI GRANDI ? CENTRO SUD\",\"CONTRATTI GRANDI ? NORD\"],\"name\":\"Denominazione_Lotto\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"7145095EE8\",\"7145093D42\"],\"name\":\"Identificativo_Lotto\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"Misto\",\"Misto\"],\"name\":\"Tipologia_Lotto\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"Informatica, Elettronica,Telecomunicazioni e macchine per l'ufficio\",\"Informatica, Elettronica,Telecomunicazioni e macchine per l'ufficio\"],\"name\":\"Categoria_Merceologica\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"Accordo Quadro\",\"Accordo Quadro\"],\"name\":\"Tipo_Strumento\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"aperta\",\"aperta\"],\"name\":\"Tipo_Procedura\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"SMATERIALIZZATA\",\"SMATERIALIZZATA\"],\"name\":\"Modalita_Svolgimento\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"N\",\"N\"],\"name\":\"Aggiudicazione_Esclusiva\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"N\",\"N\"],\"name\":\"Verde\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"Gara ad offerta economicamente più vantaggiosa\",\"Gara ad offerta economicamente più vantaggiosa\"],\"name\":\"Criterio_Aggiudicazione\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"01-08-2017\",\"01-08-2017\"],\"name\":\"Data_Pubblicazione\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Data_Aggiudicazione\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Data_Attivazione\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Data_Autorizzazione_6_5\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Data_Autorizzazione_7_5\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Data_Termine\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"160000000\",\"70000000\"],\"name\":\"Base_Asta\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"int\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":true,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"int\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Importo_Massimale\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Quantita_Massimale\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Unita_Misura\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Percentuale_Erosione\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Numero_Operatori_Economici_Partecipanti\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"\",\"\"],\"name\":\"Numero_Operatori_Economici_Aggiudicatari/Abilitati\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"},{\"sampleValues\":[\"S\",\"S\"],\"name\":\"Flag_Commissione_FEE\",\"description\":\"\",\"nativeDataType\":null,\"derivedDataType\":\"string\",\"primaryKey\":false,\"nullable\":true,\"modifiable\":true,\"dataTypeDescriptor\":{\"numeric\":false,\"date\":false,\"complex\":false},\"updatedTracker\":false,\"precisionScale\":null,\"createdTracker\":false,\"tags\":null,\"dataTypeWithPrecisionAndScale\":\"string\",\"descriptionWithoutNewLines\":\"\"}],\"schemaName\":null,\"databaseName\":null,\"hiveFormat\":\"ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'\\n WITH SERDEPROPERTIES ( 'separatorChar' = ',' ,'escapeChar' = '\\\\\\\\' ,'quoteChar' = '\\\\\\\"') STORED AS TEXTFILE\",\"structured\":false,\"serdeTableProperties\":null,\"id\":null}",
+    "encoding" : null
+  },
+  "operational" : {
+    "theme" : "GOVE",
+    "subtheme" : "amministrazione",
+    "logical_uri" : "daf://dataset/pac_consip/GOVE__amministrazione/bandi_test_consip_public",
+    "physical_uri" : "/daf/ordinary/pac_consip/GOVE__amministrazione/pac_consip_o_bandi_test_consip_public",
+    "is_std" : true,
+    "group_own" : "pac_consip",
+    "group_access" : null,
+    "std_schema" : null,
+    "read_type" : "last_update",
+    "georef" : null,
+    "input_src" : {
+      "sftp" : null,
+      "srv_pull" : null,
+      "srv_push" : [
+        {
+          "name" : "ws_hdfs",
+          "url" : "https://api.daf.teamdigitale.it/hdfs/proxy/uploads/serena/GOVE/amministrazione/bandi_test_consip/",
+          "username" : "serena",
+          "password" : "xxxxxxx",
+          "access_token" : null,
+          "param" : "csv"
+        }
+      ],
+      "daf_dataset" : null
+    },
+    "ingestion_pipeline" : [
+      {
+        "name" : null,
+        "param" : null
+      }
+    ],
+    "storage_info" : {
+      "hdfs" : {
+        "name" : "hdfs_daf",
+        "path" : null,
+        "param" : null
+      },
+      "kudu" : null,
+      "hbase" : null,
+      "textdb" : null,
+      "mongo" : null
+    },
+    "dataset_type" : "batch",
+    "is_vocabulary" : false,
+    "ext_opendata" : null,
+    "acl" : [],
+    "file_type" : "csv",
+    "partitions" : null,
+    "dataset_proc" : {
+      "dataset_type" : "batch",
+      "cron" : "1 min",
+      "read_type" : "last_update",
+      "merge_strategy" : "sync",
+      "scheduling_strategy" : "TIMER_DRIVEN",
+      "partitions" : null
+    },
+    "type_info" : {
+      "dataset_type" : "primitive",
+      "sources" : null,
+      "query_json" : null,
+      "query_sql" : null
+    }
+  },
+  "dcatapit" : {
+    "alternate_identifier" : "bandi_test_consip",
+    "author" : "luca_test",
+    "frequency" : "0 0 0 0 * ?",
+    "groups" : [],
+    "holder_identifier" : "pac_consip",
+    "holder_name" : "pac_consip",
+    "identifier" : "bandi_test_consip",
+    "license_id" : "Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)",
+    "license_title" : null,
+    "modified" : "05/02/2019",
+    "name" : "bandi_test_consip_public",
+    "notes" : "Prova Caricamento",
+    "organization" : {
+      "approval_status" : null,
+      "created" : null,
+      "description" : null,
+      "email" : null,
+      "id" : null,
+      "image_url" : null,
+      "is_organization" : null,
+      "name" : "pac_consip",
+      "revision_id" : null,
+      "state" : null,
+      "title" : null,
+      "type" : null,
+      "users" : null
+    },
+    "owner_org" : "new_org2",
+    "publisher_identifier" : "pac_consip",
+    "publisher_name" : "pac_consip",
+    "relationships_as_object" : [],
+    "relationships_as_subject" : [],
+    "resources" : [],
+    "tags" : [],
+    "theme" : "GOVE",
+    "title" : "Bandi test consip",
+    "privatex" : false
+  }
+}

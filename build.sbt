@@ -9,9 +9,10 @@ name := "daf-srv-catalog"
 Seq(gitStampSettings: _*)
 
 scalaVersion in ThisBuild := "2.11.12"
-//scalaVersion in ThisBuild := "2.12.8"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala, DockerPlugin)
+
+dependencyOverrides += "org.typelevel" % "cats-core_2.11" % "0.9.0"
 
 
 libraryDependencies ++= Seq(
@@ -21,14 +22,16 @@ libraryDependencies ++= Seq(
   //elastic
   "com.sksamuel.elastic4s" %% "elastic4s-http" % "5.6.4",
   "org.elasticsearch.client" % "elasticsearch-rest-client" % "5.6.2",
+//  "play-circe" %% "play-circe" % "2.5-0.8.0",
   "org.scalactic" %% "scalactic" % "3.0.5",
   "org.scalatest" %% "scalatest" % Versions.scalaTest % "test",
+  "com.github.simplyscala" %% "scalatest-embedmongo" % "0.2.2" % Test,
   "org.mockito" % "mockito-scala_2.11" % "1.1.4"
-//"io.swagger" %% "swagger-play2" % "1.5.1", already on common
+  //"io.swagger" %% "swagger-play2" % "1.5.1", already on common
   //"org.apache.spark" %% "spark-core" % "2.2.0",
   //"org.apache.spark" %% "spark-sql" % "2.2.0"
+  
 )
-
 lazy val circe = "io.circe"
 
 val circeDependencies = Seq(
@@ -40,6 +43,7 @@ val circeDependencies = Seq(
 libraryDependencies ++= circeDependencies
 libraryDependencies += "play-circe" %% "play-circe" % "2.5-0.8.0"
 
+
 resolvers ++= Seq(
   Resolver.mavenLocal,
   "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases",
@@ -49,7 +53,8 @@ resolvers ++= Seq(
   //"cloudera" at "https://repository.cloudera.com/artifactory/cloudera-repos/",
   //"lightshed-maven" at "http://dl.bintray.com/content/lightshed/maven",
   "daf repo" at s"$nexusUrl/maven-public/",
-  "Bintary JCenter" at "http://jcenter.bintray.com"
+  "Bintary JCenter" at "http://jcenter.bintray.com",
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 )
 
