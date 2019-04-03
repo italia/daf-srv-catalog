@@ -1,6 +1,6 @@
 object Versions {
 
-  lazy val defaultVersion = "3.0.1-SNAPSHOT"
+  lazy val defaultVersion = "2.0.22-SNAPSHOT"
 
   val playVersion = "2.5.14"
 
@@ -9,6 +9,4 @@ object Versions {
   val circeVersion = "0.8.0"
 
   val scalaTest = "3.0.5"
-
-  val mockito = "2.7.19"
 }

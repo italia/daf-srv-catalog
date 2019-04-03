@@ -5,8 +5,9 @@ import play.api.Configuration
 
 trait ConfigurationInstance {
 
-  protected val configFile = "test.conf"
-
-  implicit val configuration: Configuration = Configuration { ConfigFactory.load(configFile) }
+  protected val configFile = "test"
+  implicit val configurationTest: Configuration = Configuration {
+    ConfigFactory.load()
+  }
 
 }

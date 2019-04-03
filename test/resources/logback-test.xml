@@ -27,6 +27,7 @@
     <logger name="it.gov.daf" level="DEBUG" />
     <logger name="controllers" level="DEBUG" />
     <logger name="play.api.libs.circe" level="DEBUG" />
+    <logger name="org.mongodb.driver" level="WARN"/>
 
 
 

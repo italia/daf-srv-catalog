@@ -86,6 +86,7 @@ class CatalogController @Inject()(val playSessionStore: PlaySessionStore)
     }
   }
 
+
   @ApiOperation(value = "check if the name is present on db", response = classOf[Boolean])
   def isPresent(name: String) = Action.async { implicit request =>
     execInContext[Future[Result]]("isPresent") { () =>
@@ -294,5 +295,9 @@ class CatalogController @Inject()(val playSessionStore: PlaySessionStore)
         mongoClient.getFieldsVoc
       }
     }
+  }
+
+  def printCreate = {
+
   }
 }

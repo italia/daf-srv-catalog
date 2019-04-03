@@ -123,7 +123,7 @@ class MongoRepository @Inject()(implicit configuration: Configuration) {
               case Some(meta) => {
                 val obj = com.mongodb.util.JSON.parse(meta.asJson.toString()).asInstanceOf[DBObject]
                 val responseInsert = collection.insert(obj)
-                if(responseInsert.wasAcknowledged()) { logger.debug(s"${meta.dcatapit.name} inserted"); Right(DafResponseSuccess(s"${meta.dcatapit.name} inserted", None)) }
+                if(isPresent(meta.dcatapit.name)) { logger.debug(s"${meta.dcatapit.name} inserted, n: $responseInsert"); Right(DafResponseSuccess(s"${meta.dcatapit.name} inserted", None)) }
                 else { logger.debug(s"error in insert ${meta.dcatapit.name}"); Left(Error(Some(500), "Internal server error", None)) }
               }
               case None => logger.debug(s"error in writeOrdinaryWithStandard for metacatalog ${metaCatalog.dcatapit.name}"); Left(Error(Some(500), "Internal server error", None))
@@ -137,7 +137,7 @@ class MongoRepository @Inject()(implicit configuration: Configuration) {
           case Some(meta) => {
             val obj = com.mongodb.util.JSON.parse(meta.asJson.toString()).asInstanceOf[DBObject]
             val responseInsert = collection.insert(obj)
-            if(responseInsert.wasAcknowledged()) { logger.debug(s"${meta.dcatapit.name} inserted"); Right(DafResponseSuccess(s"${meta.dcatapit.name} inserted", None)) }
+            if(isPresent(meta.dcatapit.name)){ logger.debug(s"${meta.dcatapit.name} inserted, n: $responseInsert"); Right(DafResponseSuccess(s"${meta.dcatapit.name} inserted", None)) }
             else { logger.debug(s"error in insert ${meta.dcatapit.name}"); Left(Error(Some(500), "Internal server error", None)) }
           }
         }
@@ -162,7 +162,7 @@ class MongoRepository @Inject()(implicit configuration: Configuration) {
     }
   }
 
-  private def canDeleteCatalog(isSysAdmin: Boolean, name: String, token: String, wsClient: WSClient, user: String) = {
+  protected def canDeleteCatalog(isSysAdmin: Boolean, name: String, token: String, wsClient: WSClient, user: String) = {
     val url = if(isSysAdmin) "/dati-gov/v1/dashboard/iframesByName/" + name + s"?user=$user" else "/dati-gov/v1/dashboard/iframesByName/" + name
 
     val widgetsResp = wsClient.url(servicesConfig.datipubbliciUrl + url)
@@ -212,10 +212,13 @@ class MongoRepository @Inject()(implicit configuration: Configuration) {
 
     canDeleteCatalog(isSysAdmin, nameCatalog, token, wsClient, user).map{ booleanResp =>
       if(booleanResp){
-        val query = createQueryToDeleteCatalog(isSysAdmin, nameCatalog, user, org)
-        val result = if(collection.remove(query).getN > 0) Right(DafResponseSuccess(s"catalog $nameCatalog deleted", None)) else Left(Error(Some(404), s"catalog $nameCatalog not found", None))
-        Logger.logger.debug(s"$nameCatalog deleted from catalog_test result: ${result.isRight}")
-        result
+        if(isPresent(nameCatalog)) {
+          val query = createQueryToDeleteCatalog(isSysAdmin, nameCatalog, user, org)
+          collection.remove(query)
+          val result = if (!isPresent(nameCatalog)) Right(DafResponseSuccess(s"catalog $nameCatalog deleted", None)) else Left(Error(Some(404), s"catalog $nameCatalog not found", None))
+          Logger.logger.debug(s"$nameCatalog deleted from catalog_test result: ${result.isRight}")
+          result
+        } else Left(Error(Some(404), s"catalog $nameCatalog not found (before remove)", None))
       } else { Logger.logger.debug("mongo: connection error");Left(Error(Some(500), s"connection error", None)) }
     }
   }
@@ -242,7 +245,8 @@ class MongoRepository @Inject()(implicit configuration: Configuration) {
   }
 
   def getFieldsVoc: Future[Either[Error, Seq[DatasetNameFields]]] = {
-    def parseFieldsVoc(seqMetacatalog: Seq[MetaCatalog]) = seqMetacatalog.map{ catalog => DatasetNameFields(catalog.dcatapit.name, catalog.dataschema.avro.fields.get.map(f => f.name))}
+    def parseFieldsVoc(seqMetacatalog: Seq[MetaCatalog]) =
+      seqMetacatalog.map{ catalog => DatasetNameFields(catalog.dcatapit.name, catalog.dataschema.avro.fields.get.map(f => f.name))}
 
     val result = collection.find(MongoDBObject("operational.is_vocabulary" -> true)).toList
     val jsonString = com.mongodb.util.JSON.serialize(result)
